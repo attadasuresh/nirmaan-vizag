@@ -1,0 +1,45 @@
+.register-full-container1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.register-bookcamp-card{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    margin:100px;
+
+}
+.register-card-bookcamp-heading{
+    font-family: roboto;
+    text-align: center;
+}
+.register-label-card{
+    font-size: 20px;
+    font-family: roboto;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.register-bookcamp-input-card{
+    padding: 10px;
+    margin-top: 10px;
+}
+.register-bookcamp-button{
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(60, 60, 196);
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: roboto;
+
+}
+.register-label-card1{
+    font-size: 20px;
+    font-family: roboto;
+    font-weight: bold;
+    padding-top: 10px;
+}
