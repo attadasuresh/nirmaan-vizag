@@ -34,16 +34,16 @@ const About = () => {
             image: "images/IMG_20230811_142145.jpg"
           },
           {
-            name: "V. Durga Prasad",
+            name: "V. Durga Prasad (MBA)",
             role: "Center Manager",
             description: "Inspiring Excellence Always - Leading by Example - Visionary Team Leader",
             image: "images/4010202_c8e3_3.jpg"
           },
           {
-            name: "Debjit Mukherjee",
+            name: "Debjit Mukherjee (MBA)",
             role: "Placement Co-ordinator",
             description: "Excellence Personified - Transformative Leader - Guiding Light",
-            image: "images/4010202_c8e3_3.jpg"
+            image: "images/b64cfea8-5a4b-45f3-9311-aa0adf1386e0.jpeg"
           },
           {
             name: "N.Vandana ( M.A , B.Ed )",
@@ -61,7 +61,7 @@ const About = () => {
             name: "M.Nagalakshmi (MCA)",
             role: "IT Trainer",
             description: "Expert Communicator - Empathetic Mentor - Adaptable Instructor",
-            image: "images/4010202_c8e3_3.jpg"
+            image: "images/WhatsApp Image 2024-10-29 at 5.42.47 PM.jpeg"
           },
           {
             name: "K. Prasanthi ( B.Tech )",

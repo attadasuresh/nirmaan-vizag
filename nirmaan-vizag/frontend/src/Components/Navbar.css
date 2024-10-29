@@ -19,6 +19,7 @@
 
 .navbar-image-logo {
     height: 60px;
+    border-radius: 6px;
 }
 
 .navbar-headings-container {

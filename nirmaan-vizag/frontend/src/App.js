@@ -7,6 +7,13 @@ import Cource from './Components/Cource';
 import Footer from './Components/Footer';
 import About from './Components/About';
 import Contact from './Components/Contact';
+import Placement from './Components/Placement';
+import Login from './Components/Login';
+import Dashboard from './Components/Dashboard';
+
+
+
+
 
 import './App.css';
 
@@ -22,7 +29,10 @@ function App() {
       <Route path='/Footer' element={<Footer />}/>
       <Route path='/About' element={<About />}/>
       <Route path='/Contact' element={<Contact />}/>
-
+      <Route path='/Placement' element={<Placement />}/>
+      <Route path='/Login' element={<Login />}/>
+      <Route path='/Dashboard' element={<Dashboard />}/>
+      
     </Routes>
   </BrowserRouter>
   );

@@ -25,7 +25,7 @@ const Register = () => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    axios.post('http://localhost:3000/formdata', data)
+    axios.post('http://localhost:3001/formdata', data)
       .then((response) => {
         console.log('Data submitted successfully:', response.data);
         alert('Data Successfully Submitted');

@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className='navbar-full-container'>
         <div>
           <Link className='navbar-home1' to="/home">
-            <img src='./images/nirmaan_logo.png' alt='logo' className='navbar-image-logo' />
+            <img src='images/nirmaanlogo.png' alt='logo' className='navbar-image-logo' />
           </Link>
         </div>
         <button className='hamburger' onClick={toggleMenu}>
@@ -24,9 +24,9 @@ const Navbar = () => {
           <Link className='navbar-home' to="/about">About Us</Link>
           <Link className='navbar-home' to="/Cource">Courses</Link>
           <Link className='navbar-home' to="/Contact">Contact</Link>
-          <Link className='navbar-home' to="/details">Placement</Link>
+          <Link className='navbar-home' to="/Placement">Placement</Link>
           <Link to="/Register" className='navbar-button1 navbar-home'>Register Now</Link>
-          <Link to="/Admin" className='navbar-button1 navbar-home'>Admin</Link>
+          <Link to="/Login" className='navbar-button1 navbar-home'>Admin</Link>
         </div>
       </div>
     </>
