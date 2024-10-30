@@ -105,7 +105,7 @@ const Register = () => {
           onChange={handleChange}
         />
 
-        <label className='register-label-card1'>Date of Birth (required)</label>
+        <label className='register-label-card1'> Today Date (required)</label>
         <input
           type='date'
           className='register-bookcamp-input-card'

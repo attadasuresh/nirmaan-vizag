@@ -1,7 +1,10 @@
+//Login.js
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import axios from 'axios';
+import Cookies from "js-cookie"
 
 const Login = () => {
   const [data, setData] = useState({
@@ -19,20 +22,33 @@ const Login = () => {
     e.preventDefault();
     
     axios.post('http://localhost:3001/logindata', data)
-      .then((res) => {
-        console.log('Response from server:', res.data); // Debugging to check response
+    .then((res) => {
+        // Store token and navigate if login is successful
+        Cookies.set("jwtToken", res.data.token, { expires: 30 });
+        navigate('/Dashboard');
+        setError('');
+       window.location.reload()
+        
+    })
+    .catch((err) => {
 
-        if (res.data.message === "Login successfully") {
-          setError('');
-          navigate('/Dashboard');
+        if (err.response) {
+            const status = err.response.status;
+
+            if (status === 404) {
+                setError("User not found. Please check your username.");
+            } else if (status === 401) {
+                setError("Incorrect password. Please try again.");
+            } else if (status === 500) {
+                setError("Internal server error. Please try again later.");
+            } else {
+                setError("An unexpected error occurred. Please try again.");
+            }
         } else {
-          setError("Incorrect Username or Password");
+            // Handle network or other errors
+            setError("Network error. Please check your connection and try again.");
         }
-      })
-      .catch((err) => {
-        console.error('Error submitting data:', err.message);
-        setError("An error occurred, please try again.");
-      });
+    });
       
     setData({
       username: '',

@@ -8,6 +8,8 @@ const Admin = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showPopup, setShowPopup] = useState(false);
   const [selectedVolunteer, setSelectedVolunteer] = useState(null);
+  const [startDate, setStartDate] = useState(''); // Start date for range
+  const [endDate, setEndDate] = useState(''); // End date for range
 
   useEffect(() => {
     axios.get('http://localhost:3001/formdataget')
@@ -35,6 +37,47 @@ const Admin = () => {
     setSelectedVolunteer(null);
   };
 
+  const handleDownload = () => {
+    if (!startDate || !endDate) {
+      alert("Please select both start and end dates.");
+      return;
+    }
+
+    const filteredData = volunteers.filter(volunteer => {
+      const dob = new Date(volunteer.dateofbirth);
+      return dob >= new Date(startDate) && dob <= new Date(endDate);
+    });
+
+    if (filteredData.length === 0) {
+      alert("No data found within the selected date range.");
+      return;
+    }
+
+    const csv = filteredData.map(row => ({
+      'Full Name': row.fullname,
+      Email: row.email,
+      Mobile: row.mobile,
+      Qualification: row.qualification,
+      College: row.college,
+      'Date of Birth': row.dateofbirth,
+      Address: row.address,
+    }));
+
+    const csvContent = [
+      Object.keys(csv[0]).join(','),
+      ...csv.map(row => Object.values(row).join(',')),
+    ].join('\n');
+
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    const url = URL.createObjectURL(blob);
+    link.href = url;
+    link.setAttribute('download', `data_${startDate}_to_${endDate}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const filteredVolunteers = volunteers.filter(register =>
     register.fullname.toLowerCase().includes(searchTerm.toLowerCase()) ||
     register.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -55,7 +98,27 @@ const Admin = () => {
           className="search-box"
         />
       </div>
-      
+
+      <div className="download-container">
+        <input 
+          type="date" 
+          value={startDate} 
+          onChange={(e) => setStartDate(e.target.value)} 
+          className="date-selector" 
+          placeholder="Start Date"
+        />
+        <input 
+          type="date" 
+          value={endDate} 
+          onChange={(e) => setEndDate(e.target.value)} 
+          className="date-selector" 
+          placeholder="End Date"
+        />
+        <button onClick={handleDownload} className="download-button">
+          Download Data by Date Range
+        </button>
+      </div>
+
       <table className='userdata-tables'>
         <thead>
           <tr>
