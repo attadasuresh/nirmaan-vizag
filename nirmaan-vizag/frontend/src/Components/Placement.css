@@ -1,5 +1,86 @@
-.palcement-top-heading{
+/* Container for placement cards with centered layout */
+.placement-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Card styling with modern shadow and gradient effect */
+  .placement-card {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
     text-align: center;
-    margin: 20px;
+    width: 100%;
+    max-width: 320px;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .placement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Square image styling with border */
+  .placement-photo {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Typography styling */
+  .placement-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2b2b2b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .placement-company,
+  .placement-salary {
+    color: #333;
+    font-size: 1rem;
+    margin: 0.4rem 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .placement-container {
+      padding: 1rem;
+    }
+  
+    .placement-card {
+      max-width: 280px;
+      padding: 1.5rem;
+    }
+  
+    .placement-photo {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .placement-name {
+      font-size: 1.2rem;
+    }
+  
+    .placement-company,
+    .placement-salary {
+      font-size: 0.9rem;
+    }
+  }
+  .placement-top-heading{
+    text-align: center;
+    padding: 10px;
     font-family: roboto;
-}
+  }

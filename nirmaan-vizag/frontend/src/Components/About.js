@@ -61,7 +61,7 @@ const About = () => {
             name: "M.Nagalakshmi (MCA)",
             role: "IT Trainer",
             description: "Expert Communicator - Empathetic Mentor - Adaptable Instructor",
-            image: "images/WhatsApp Image 2024-10-29 at 5.42.47 PM.jpeg"
+            image: "images/WhatsApp Image 2024-10-30 at 11.19.27 AM.jpeg"
           },
           {
             name: "K. Prasanthi ( B.Tech )",

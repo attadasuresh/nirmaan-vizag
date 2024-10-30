@@ -24,21 +24,32 @@ const UserDashboard = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const formdata= new FormData()
-    formdata.append('fullName',userData.fullName)
-    formdata.append('salary',userData.salary)
-    formdata.append('companyName',userData.companyName)
-    formdata.append('collage',userData.collage)
-    formdata.append('batch',userData.batch)
-    formdata.append('image',userData.image)
 
-
-    axios.post('http://localhost:3001/placement',formdata)
-    .then((res)=>res.data)
-    .catch((err)=>console.log(err)
-    )
-    console.log(userData);
-    
+    const formdata = new FormData();
+    formdata.append('fullName', userData.fullName);
+    formdata.append('salary', userData.salary);
+    formdata.append('companyName', userData.companyName);
+    formdata.append('collage', userData.collage);
+    formdata.append('batch', userData.batch);
+    formdata.append('image', userData.image);
+  
+    axios.post('http://localhost:3001/placement', formdata)
+      .then((res) => {
+        alert("Data Successfully Submitted");
+        console.log(res.data);
+        setUserData({
+          fullName: '',
+          salary: '',
+          companyName: '',
+          collage: '',
+          batch: '',  
+          image: ''
+        });
+      })
+      .catch((err) => {
+        console.error("Error submitting data:", err);
+        alert("An error occurred while submitting the data.");
+      });
   };
 
   return (
@@ -71,6 +82,7 @@ const UserDashboard = () => {
               value={userData.fullName} 
               onChange={handleInputChange} 
               placeholder="Enter full name" 
+              required
             />
           </label>
           <label>
@@ -81,6 +93,8 @@ const UserDashboard = () => {
               value={userData.salary} 
               onChange={handleInputChange} 
               placeholder="Enter full name" 
+              required
+
             />
           </label>
 
@@ -92,6 +106,8 @@ const UserDashboard = () => {
               value={userData.companyName} 
               onChange={handleInputChange} 
               placeholder="Enter company name" 
+              required
+
             />
           </label>
           <label>
@@ -102,6 +118,8 @@ const UserDashboard = () => {
               value={userData.Collage} 
               onChange={handleInputChange} 
               placeholder="Enter company name" 
+              required
+
             />
           </label>
           <label>
@@ -112,6 +130,8 @@ const UserDashboard = () => {
               value={userData.batch} 
               onChange={handleInputChange} 
               placeholder="Enter ID" 
+              required
+
             />
           </label>
           <button type="submit" className="submit-button">Submit</button>

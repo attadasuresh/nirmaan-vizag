@@ -8,11 +8,13 @@
     background-color: #206da8;
     color: #fff;
     position: relative;
+    padding: 25px;
   }
   
   .navbar-image-logo {
     height: 50px;
     width: auto;
+    border-radius: 6px;
   }
   
   .hamburger {

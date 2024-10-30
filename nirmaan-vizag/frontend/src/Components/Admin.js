@@ -127,7 +127,7 @@ const Admin = () => {
             <th className='admin-heading'>Mobile</th>
             <th className='admin-heading'>Qualification</th>
             <th className='admin-heading'>College</th>
-            <th className='admin-heading'>Date of Birth</th>
+            <th className='admin-heading'>Date of Submit</th>
             <th className='admin-heading'>Address</th>
             <th className='admin-heading'>Actions</th>
           </tr>

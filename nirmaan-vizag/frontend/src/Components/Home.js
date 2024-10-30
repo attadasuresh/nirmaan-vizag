@@ -131,6 +131,86 @@ const Home = () => {
 </div>
 <div>
 </div>
+<h1 className='home-course-heading'> WE ARE PROVIDING TRAINING CERTIFICATES  </h1>
+
+<div className='home-slide-container'>
+                <Carousel>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100 home-carouserl-img1"
+                            src="images/IMG_20231230_130425.jpg"
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100 home-carouserl-img1"
+                            src="images/grouppic.jpg"
+                            alt="Second slide"
+                        />
+                        <Carousel.Caption>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100 home-carouserl-img1"
+                            src="images/IMG_20230418_104312.jpg"
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+            </div>
+            <div className="home-about-us-section">
+      <h1 className="home-home-about">JOB DRIVE</h1>
+      <div className="home-about-us-container">
+        <div className="home-about-image-wrapper">
+        <div className='home-slide-container'>
+                <Carousel>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100 home-carouserl-img1"
+                            src="images/IMG_20220917_112412.jpg"
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100 home-carouserl-img1"
+                            src="images/IMG-20231228-WA0009.jpg"
+                            alt="Second slide"
+                        />
+                        <Carousel.Caption>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100 home-carouserl-img1"
+                            src="images/IMG_20231228_173735.jpg"
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+            </div>
+        </div>
+        <div className="home-about-content">
+          <h2 className="home-about-heading">INTERVIEWS</h2>
+          <p className="home-about-paragraph">
+          At Nirmaan, we are dedicated to bridging the gap between education and employment. Our institute offers a comprehensive range of courses designed to equip students with the skills and knowledge they need to succeed in today's competitive job market. We understand that finding the right job can be challenging, which is why we go beyond traditional education.
+Nirmaan actively organizes job drives and collaborates with various companies to ensure that our students have access to quality placements. Our expert faculty provides personalized guidance and support throughout the placement process, helping students prepare for interviews, refine their resumes, and build essential soft skills. With a strong focus on real-world applications, we aim to empower our students to achieve their career goals and excel in their chosen fields. Join us at Nirmaan and take the first step towards a brighter future!
+          </p>
+          <a href="/Placement" className="home-about-button"> View Our Placements</a>
+        </div>
+      </div>
+    </div>
+
 <Footer />
         </>
     )

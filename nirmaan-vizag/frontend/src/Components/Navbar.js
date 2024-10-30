@@ -50,7 +50,7 @@ const Navbar = () => {
       </button>
       <div className={`navbar-headings-container ${isOpen ? "show" : ""}`}>
         <Link className='navbar-home' to="/about">About Us</Link>
-        <Link className='navbar-home' to="/Course">Courses</Link>
+        <Link className='navbar-home' to="/Cource">Courses</Link>
         <Link className='navbar-home' to="/Contact">Contact</Link>
         <Link className='navbar-home' to="/Placement">Placement</Link>
         <Link to="/Register" className='navbar-button1 navbar-home'>Register Now</Link>

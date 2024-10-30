@@ -5,6 +5,7 @@ const path = require('path');
 const app = express();
 const upload = require("./multer");
 const jwt = require('jsonwebtoken');
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.use(express.json());
 app.use(cors());
@@ -113,6 +114,15 @@ app.post('/placement', upload.single("image"), (req, res) => {
             return res.status(500).send('Database error');
         }
         res.send('Data inserted successfully');
+    });
+});
+
+
+app.get('/placementdetails', (req, res) => {
+    const sql = "SELECT * FROM placementdetails";
+    db.query(sql, (err, data) => {
+      if (err) return res.json(err);
+      return res.json(data);
     });
 });
 
