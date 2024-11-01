@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FaSearch } from 'react-icons/fa';
+import {baseUrl} from './Config'
 import './Admin.css';
 
 const Admin = () => {
@@ -12,7 +13,7 @@ const Admin = () => {
   const [endDate, setEndDate] = useState(''); // End date for range
 
   useEffect(() => {
-    axios.get('http://localhost:3001/formdataget')
+    axios.get(`${baseUrl}formdataget`)
       .then((response) => setVolunteers(response.data))
       .catch((error) => console.error('Error fetching data:', error));
   }, []);

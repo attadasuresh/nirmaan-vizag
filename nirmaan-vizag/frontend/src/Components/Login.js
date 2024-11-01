@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import axios from 'axios';
 import Cookies from "js-cookie"
+import {baseUrl} from './Config'
+
 
 const Login = () => {
   const [data, setData] = useState({
@@ -21,7 +23,7 @@ const Login = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     
-    axios.post('http://localhost:3001/logindata', data)
+    axios.post(`${baseUrl}logindata`, data)
     .then((res) => {
         // Store token and navigate if login is successful
         Cookies.set("jwtToken", res.data.token, { expires: 30 });

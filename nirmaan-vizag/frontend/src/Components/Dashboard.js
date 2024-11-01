@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Dashboard.css';
 import axios from 'axios';
+import {baseUrl} from './Config'
+
 
 const UserDashboard = () => {
   const [userData, setUserData] = useState({
@@ -32,8 +34,8 @@ const UserDashboard = () => {
     formdata.append('collage', userData.collage);
     formdata.append('batch', userData.batch);
     formdata.append('image', userData.image);
-  
-    axios.post('http://localhost:3001/placement', formdata)
+
+    axios.post(`${baseUrl}placement`, formdata)
       .then((res) => {
         alert("Data Successfully Submitted");
         console.log(res.data);

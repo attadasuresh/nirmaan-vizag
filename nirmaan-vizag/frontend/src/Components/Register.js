@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Register.css';
+import {baseUrl} from './Config'
+
 
 const Register = () => {
   const [data, setData] = useState({
@@ -25,7 +27,7 @@ const Register = () => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    axios.post('http://localhost:3001/formdata', data)
+    axios.post(`${baseUrl}formdata`, data)
       .then((response) => {
         console.log('Data submitted successfully:', response.data);
         alert('Data Successfully Submitted');

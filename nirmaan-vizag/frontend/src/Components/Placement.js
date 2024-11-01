@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import {baseUrl} from './Config'
+
 import './Placement.css'; 
 const Placement = () => {
+
+
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/placementdetails')
+
+
+    axios.get(`${baseUrl}placementdetails`)
       .then((response) => setData(response.data))
       .catch((error) => console.error('Error fetching data:', error));
   }, []);
@@ -17,7 +23,7 @@ const Placement = () => {
     <div className="placement-container">
       {data.map((element, id) => (
         <div className="placement-card" key={id}>
-          <img src={"http://localhost:3001/" + element.image} alt={`${element.fullname}'s profile`} className="placement-photo" />
+          <img src={`${baseUrl}`+ element.image} alt={`${element.fullname}'s profile`} className="placement-photo" />
           <h2 className="placement-name">{element.fullName}</h2>
           <p className="placement-company">Company: {element.companyName}</p>
           <p className="placement-salary">Salary: {element.salary}</p>
