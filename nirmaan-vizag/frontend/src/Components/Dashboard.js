@@ -72,7 +72,7 @@ const UserDashboard = () => {
         <form onSubmit={handleSubmit} className="user-form">
           <label>
             Image:
-            <input type="file" onChange={handleImageChange} />
+            <input type="file" onChange={handleImageChange}  />
           </label>
           <label>
             Full Name:

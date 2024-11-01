@@ -37,7 +37,7 @@ const About = () => {
             name: "V. Durga Prasad (MBA)",
             role: "Center Manager",
             description: "Inspiring Excellence Always - Leading by Example - Visionary Team Leader",
-            image: "images/4010202_c8e3_3.jpg"
+            image: "images/WhatsApp Image 2024-10-31 at 10.00.45 AM (1).jpeg"
           },
           {
             name: "Debjit Mukherjee (MBA)",
@@ -55,7 +55,7 @@ const About = () => {
             name: "D.Parasuramudu ( M.Sc )",
             role: "Mobilizer",
             description: "Effective Communication Skills - Empathy and Cultural Sensitivity - Organizational and Problem-Solving Skills",
-            image: "images/4010202_c8e3_3.jpg"
+            image: "images/WhatsApp Image 2024-10-31 at 9.49.34 AM.jpeg"
           },
           {
             name: "M.Nagalakshmi (MCA)",
@@ -67,13 +67,19 @@ const About = () => {
             name: "K. Prasanthi ( B.Tech )",
             role: "Domain-Trainer",
             description: "Expertise and Knowledge - Effective Communication - Patience and Empathy",
-            image: "images/79c0fb85-7cd9-4ec5-a182-3edfd2e81455.jpeg"
+            image: "images/WhatsApp Image 2024-10-31 at 10.15.43 AM.jpeg"
           },
           {
-            name: "N.Mohan Rao ( B.Tech )",
+            name: "N.Mohan Rao ( B.A )",
             role: "Admin Cum Counsellor",
             description: "Effective Communication Skills - Organizational & Multitasking Skills - Empathy and Problem-Solving",
-            image: "images/4010202_c8e3_3.jpg"
+            image: "images/177785b3-fabf-4f4a-8b03-8901ae3f7e33.jpeg"
+          },
+          {
+            name: "A.Suresh( B.Tech )",
+            role: "Web Developer",
+            description: "Design and Development - Front-End and Back-End Expertise - Continuous Learning",
+            image: "images/4a21f102-8247-4628-b42c-839c6ea283c1.jpeg"
           },
         ].map((member, index) => (
           <div key={index} className='about-card'>
