@@ -1,1 +1,1 @@
-export const baseUrl = 'http://localhost:3001/'
+export const baseUrl = 'http://nirmaan-vizag-api.bedatatech.com/'
