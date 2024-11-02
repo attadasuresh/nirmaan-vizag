@@ -478,55 +478,88 @@
   /* Media Queries for Responsiveness */
 
 /* Mobile Devices */
-@media (max-width: 767px) {
+/* Default desktop styles remain as is */
+
+/* Mobile view styling */
+@media (max-width: 768px) {
+  .courses-card {
+    padding: 10px;
+  }
+
   .courses-title {
-    font-size: 30px; /* Smaller font size */
-    margin-bottom: 20px; /* Reduced margin */
+    font-size: 24px;
+    text-align: center;
   }
 
   .courses-list {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .course-section {
-    margin: 10px 0; /* Adjust margin for spacing */
+    width: 100%;
+    text-align: center;
   }
 
-  .cource-top-heading, .cource-aboutus-name, .cource-ourteam-heading-team {
-    font-size: 24px; /* Adjust heading size */
+  .course-items li {
+    font-size: 14px;
   }
 
-  .cource-card-button1 {
-    width: 80%; /* Full width button */
-    margin: 0 auto; /* Center the button */
+  .cource-aboutus-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
   }
 
-  .cource-our-team-img {
-    height: auto; /* Responsive image height */
-    width: 100%; /* Full width */
-  }
-
-  .cource-cards-review-container {
-    flex-direction: column; /* Stack review cards */
-    align-items: center; /* Center align */
+  .cource-our-team-img,
+  .html-tool-image,
+  .ms-tool-image,
+  .english-tool-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
   }
 
   .cource-review-icon {
-    width: 90%; /* Full width on smaller screens */
-    margin-bottom: 20px; /* Add space between cards */
+    width: 100%;
+    padding: 10px;
+    text-align: center;
   }
 
-  .ms-tool-container, .html-tool-container, .internet-tool-container, .english-tool-container {
-    flex-direction: column; /* Stack tool containers */
-    align-items: center; /* Center align */
+  .cource-cards-review-container {
+    flex-direction: column;
+    gap: 15px;
   }
 
-  .ms-tool-image, .html-tool-image, .internet-tool-image, .english-tool-image {
-    width: 80%; /* Full width images */
-    margin-bottom: 20px; /* Space below images */
+  .ms-tool-container,
+  .html-tool-container,
+  .english-tool-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .cource-card-button1 {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .ms-top-heading, .html-css-title, .english-title, .ms-office-title {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  /* Carousel adjustments for mobile */
+  .cource-carouserl-img1 {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
   }
 }
+
 
 /* Tablet Devices */
 @media (min-width: 768px) and (max-width: 1024px) {

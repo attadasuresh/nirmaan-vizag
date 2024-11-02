@@ -32,7 +32,6 @@ const Admin = () => {
       })
       .catch((error) => console.error('Error deleting data:', error));
   };
-
   const handleCancel = () => {
     setShowPopup(false);
     setSelectedVolunteer(null);
