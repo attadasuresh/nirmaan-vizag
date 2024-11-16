@@ -535,10 +535,30 @@
   .ms-tool-container,
   .html-tool-container,
   .english-tool-container {
+    display: flex;
     flex-direction: column;
     text-align: center;
     gap: 10px;
+    width: 100%; /* Ensure the container spans the full width */
   }
+  
+  .ms-tool-container h2,
+  .html-tool-container h2,
+  .english-tool-container h2,
+  .ms-tool-container p,
+  .html-tool-container p,
+  .english-tool-container p {
+    width: 100%; /* Ensure heading and paragraph take full width */
+    margin: 0 auto; /* Center align text if necessary */
+  }
+  
+  .ms-tool-container .ms-tool-content,
+  .html-tool-container .html-tool-content,
+  .english-tool-container .english-tool-content {
+    width: 100%; /* Ensure content area spans full width */
+    padding: 0 20px; /* Optional padding for better readability */
+  }
+  
 
   .cource-card-button1 {
     width: 100%;
@@ -559,7 +579,11 @@
     object-fit: cover;
   }
 }
-
+.course-container-ms{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
 
 /* Tablet Devices */
 @media (min-width: 768px) and (max-width: 1024px) {

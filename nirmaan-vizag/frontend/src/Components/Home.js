@@ -15,7 +15,7 @@ const Home = () => {
     <Carousel>
         <Carousel.Item>
             <img
-                className="d-block w-100 home-carousel-img-desktop"
+                className="d-block w-100  home-carousel-img-desktop"
                 src="images/Online Courses Ad Template - Made with PosterMyWall (1).jpg"
                 alt="First slide"
             />

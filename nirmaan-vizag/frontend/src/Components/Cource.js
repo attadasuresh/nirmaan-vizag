@@ -124,10 +124,11 @@ MS PowerPoint: Slide design, transitions, animations, and effective presentation
       </p>
 
       {/* MS Word Section */}
-      <div className="ms-tool-container">
+      <div className="ms-tool-container ">
         <img src="images/2015-01-07-ms-word-preview-android.webp" alt="MS Word" className="ms-tool-image"/>
-        <div className="ms-tool-content">
-          <h2>Microsoft Word</h2>
+        <div className="ms-tool-content" >
+          <div className='course-container-ms' >
+          <h2 >Microsoft Word</h2>
           <p>
             Learn to create, edit, and format documents with ease. Our MS Word training covers all essentials, including advanced formatting and collaboration tools.
           </p>
@@ -136,6 +137,7 @@ MS PowerPoint: Slide design, transitions, animations, and effective presentation
             <li><strong>Document Collaboration:</strong> Track changes, add comments, and share with others.</li>
             <li><strong>Advanced Features:</strong> Use mail merge, headers, footers, and more.</li>
           </ul>
+        </div>
         </div>
       </div>
 
@@ -171,37 +173,8 @@ MS PowerPoint: Slide design, transitions, animations, and effective presentation
         </div>
       </div>
     </div>
-                </div>
+    </div>
 
-
-
-                <div>
-        <h1 className='ms-top-heading'>HTML & CSS Training</h1>
-      </div>
-      <div className='cource-aboutus-container'>
-        <div>
-          <img src='images/2023-01-24-CSS-vs-HTML5.jpg' alt='HTML & CSS Training' className='cource-our-team-img' />
-        </div>
-        <div className='cource-our-team-card-container'> 
-          <h1 className='cource-ourteam-heading-team'>Comprehensive HTML & CSS Training Program</h1>
-          <p className='cource-ourteam-heading-team-paragraph'>
-            Unlock Your Potential with HTML & CSS Training
-            At our institute, we offer hands-on training in HTML and CSS. Our program is designed to provide real-time, practical experience that prepares you for web development tasks and projects.
-
-            What We Offer:
-
-            <ul>
-              <li><strong>In-Depth Learning:</strong> Master the essential features of HTML and CSS to create responsive and visually appealing websites.</li>
-              <li><strong>Real-Time Application:</strong> Engage in live projects that mimic real-world scenarios, allowing you to apply your skills practically.</li>
-              <li><strong>Expert Instructors:</strong> Learn from experienced professionals who provide personalized guidance and support throughout the course.</li>
-              <li><strong>Flexible Learning:</strong> Choose from various formats, including in-person and online sessions, to suit your schedule.</li>
-            </ul>
-          </p>
-          <a href='/Register'>
-            <button className='cource-card-button1'>Register Now</button>
-          </a>
-        </div>
-      </div>
 
       <div className="html-css-section">
         <h1 className="html-css-title">HTML & CSS Training: Build Your Web Skills</h1>
@@ -327,11 +300,6 @@ MS PowerPoint: Slide design, transitions, animations, and effective presentation
           </div>
         </div>
       </div>
-
-
-
-
-
 
 
       <div className='cource-slide-container'>
