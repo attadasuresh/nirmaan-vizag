@@ -11,37 +11,38 @@ import Footer from './Footer';
 const Home = () => {
     return (
         <>
-            <div className='home-slide-container'>
-                <Carousel>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 home-carouserl-img1"
-                            src="images/Online Courses Ad Template - Made with PosterMyWall (1).jpg"
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 home-carouserl-img1"
-                            src="images/Study In Abroad Banner Post Template - Made with PosterMyWall.jpg"
-                            alt="Second slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 home-carouserl-img1"
-                            src="images/World Youth Skills Day Post Template - Made with PosterMyWall.jpg"
-                            alt="Third slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-            </div>
+<div className='home-slide-container'>
+    <Carousel>
+        <Carousel.Item>
+            <img
+                className="d-block w-100 home-carousel-img-desktop"
+                src="images/Online Courses Ad Template - Made with PosterMyWall (1).jpg"
+                alt="First slide"
+            />
+
+            <Carousel.Caption></Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+                className="d-block w-100 home-carousel-img-desktop"
+                src="images/Study In Abroad Banner Post Template - Made with PosterMyWall.jpg"
+                alt="Second slide"
+            />
+
+            <Carousel.Caption></Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+                className="d-block w-100 home-carousel-img-desktop"
+                src="images/World Youth Skills Day Post Template - Made with PosterMyWall.jpg"
+                alt="Third slide"
+            />
+
+            <Carousel.Caption></Carousel.Caption>
+        </Carousel.Item>
+    </Carousel>
+</div>
+
             <h1 className='home-course-heading'> WE ARE PROVIDING COURSES </h1>
             <div className='home-cards-container'>
             <div className='home-courses-full-container'>
@@ -134,71 +135,75 @@ const Home = () => {
 <h1 className='home-course-heading'> WE ARE PROVIDING TRAINING CERTIFICATES  </h1>
 
 <div className='home-slide-container'>
-                <Carousel>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 home-carouserl-img1"
-                            src="images/IMG_20231230_130425.jpg"
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 home-carouserl-img1"
-                            src="images/grouppic.jpg"
-                            alt="Second slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 home-carouserl-img1"
-                            src="images/IMG_20230418_104312.jpg"
-                            alt="Third slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-            </div>
+    <Carousel>
+        <Carousel.Item>
+            <img
+                className="d-block w-100 home-carousel-img-desktop"
+                src="images/IMG_20231230_130425.jpg"
+                alt="First slide"
+            />
+
+            <Carousel.Caption></Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+           
+            <img
+                className="d-block w-100 home-carousel-img-desktop"
+                src="images/grouppic.jpg"
+                alt="Second slide"
+            />
+          
+
+            <Carousel.Caption></Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+           
+            <img
+                className="d-block w-100 home-carousel-img-desktop"
+                src="images/IMG_20230418_104312.jpg"
+                alt="Third slide"
+            />
+
+            <Carousel.Caption></Carousel.Caption>
+        </Carousel.Item>
+    </Carousel>
+</div>
             <div className="home-about-us-section">
       <h1 className="home-home-about">JOB DRIVE</h1>
       <div className="home-about-us-container">
         <div className="home-about-image-wrapper">
         <div className='home-slide-container'>
-                <Carousel>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 home-carouserl-img1"
-                            src="images/IMG_20220917_112412.jpg"
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 home-carouserl-img1"
-                            src="images/IMG-20231228-WA0009.jpg"
-                            alt="Second slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 home-carouserl-img1"
-                            src="images/IMG_20231228_173735.jpg"
-                            alt="Third slide"
-                        />
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-            </div>
+    <Carousel>
+        <Carousel.Item>
+            <img
+                className="d-block w-100 home-carousel-img-desktop"
+                src="images/IMG_20220917_112412.jpg"
+                alt="First slide"
+            />
+
+            <Carousel.Caption></Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+                className="d-block w-100 home-carousel-img-desktop"
+                src="images/IMG-20231228-WA0009.jpg"
+                alt="Second slide"
+            />
+
+            <Carousel.Caption></Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+                className="d-block w-100 home-carousel-img-desktop"
+                src="images/IMG_20231228_173735.jpg"
+                alt="Third slide"
+            />
+
+            <Carousel.Caption></Carousel.Caption>
+        </Carousel.Item>
+    </Carousel>
+</div>
+
         </div>
         <div className="home-about-content">
           <h2 className="home-about-heading">INTERVIEWS</h2>
