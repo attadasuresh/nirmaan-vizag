@@ -19,7 +19,6 @@ const Home = () => {
                 src="images/Online Courses Ad Template - Made with PosterMyWall (1).jpg"
                 alt="First slide"
             />
-
             <Carousel.Caption></Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -28,7 +27,6 @@ const Home = () => {
                 src="images/Study In Abroad Banner Post Template - Made with PosterMyWall.jpg"
                 alt="Second slide"
             />
-
             <Carousel.Caption></Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -42,7 +40,6 @@ const Home = () => {
         </Carousel.Item>
     </Carousel>
 </div>
-
             <h1 className='home-course-heading'> WE ARE PROVIDING COURSES </h1>
             <div className='home-cards-container'>
             <div className='home-courses-full-container'>

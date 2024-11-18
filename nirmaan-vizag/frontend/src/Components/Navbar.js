@@ -39,29 +39,31 @@ const Navbar = () => {
   };
 
   return (
-    <div className='navbar-full-container'>
-      <div>
-        <Link className='navbar-home1' to="/home">
-          <img src='images/nirmaanlogo.png' alt='logo' className='navbar-image-logo' />
-        </Link>
-      </div>
-      <button className='hamburger' onClick={toggleMenu}>
-        ☰
-      </button>
-      <div className={`navbar-headings-container ${isOpen ? "show" : ""}`}>
-        <Link className='navbar-home' to="/about">About Us</Link>
-        <Link className='navbar-home' to="/Cource">Courses</Link>
-        <Link className='navbar-home' to="/Contact">Contact</Link>
-        <Link className='navbar-home' to="/Placement">Placement</Link>
-        <Link to="/Register" className='navbar-button1 navbar-home'>Register Now</Link>
-        
-        {isExpired ? (
-          <Link to="/Login" className='navbar-button1 navbar-home'>Admin</Link>
-        ) : (
-          <button onClick={handleLogout} className='navbar-button1'>Logout</button>
-        )}
-      </div>
+<div className='navbar-full-container'>
+    <div>
+      <Link className='navbar-home1' to="/home">
+        <img src='images/nirmaanlogo.png' alt='logo' className='navbar-image-logo' />
+      </Link>
     </div>
+    <div style={{ flex: 1, textAlign: 'center' }}> {/* Centering Vizag */}
+      <h1 style={{ color: '#fff', margin: 0, fontSize: '24px' , fontWeight:"bold",fontFamily:"roboto" }}>Visakhapatnam</h1>
+    </div>
+    <button className='hamburger' onClick={toggleMenu}>
+      ☰
+    </button>
+    <div className={`navbar-headings-container ${isOpen ? "show" : ""}`}>
+      <Link className='navbar-home' to="/about">About Us</Link>
+      <Link className='navbar-home' to="/Cource">Courses</Link>
+      <Link className='navbar-home' to="/Contact">Contact</Link>
+      <Link className='navbar-home' to="/Placement">Placement</Link>
+      <Link to="/Register" className='navbar-button1 navbar-home'>Register Now</Link>
+      {isExpired ? (
+        <Link to="/Login" className='navbar-button1 navbar-home'>Admin</Link>
+      ) : (
+        <button onClick={handleLogout} className='navbar-button1'>Logout</button>
+      )}
+    </div>
+  </div>
   );
 }
 

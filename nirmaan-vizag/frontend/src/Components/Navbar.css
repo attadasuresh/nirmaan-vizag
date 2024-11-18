@@ -1,72 +1,88 @@
-/* Navbar.css */
-
 .navbar-full-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #206da8;
-    color: #fff;
-    position: relative;
-    padding: 25px;
-  }
-  
-  .navbar-image-logo {
-    height: 50px;
-    width: auto;
-    border-radius: 6px;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #206da8;
+  color: #fff;
+  position: relative;
+  padding: 25px;
+}
+
+.navbar-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-image-logo {
+  height: 50px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.navbar-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-title {
+  margin: 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Hide by default, display on smaller screens */
+}
+
+.navbar-headings-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navbar-home {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-home:hover {
+  color: #ffd700;
+}
+
+.navbar-button1 {
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar-button1:hover {
+  background-color: #ff4500;
+}
+
+.show {
+  display: flex; /* Display navbar when hamburger menu is toggled */
+}
+
+@media (max-width: 768px) {
   .hamburger {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-    display: none; /* Hide by default, display on smaller screens */
+      display: block; /* Show hamburger icon on smaller screens */
   }
   
   .navbar-headings-container {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-  }
-  
-  .navbar-home {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
-  .navbar-home:hover {
-    color: #ffd700;
-  }
-  
-  .navbar-button1 {
-    background-color: #ff5733;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .navbar-button1:hover {
-    background-color: #ff4500;
-  }
-  
-  .show {
-    display: flex; /* Display navbar when hamburger menu is toggled */
-  }
-  
-  @media (max-width: 768px) {
-    .hamburger {
-      display: block; /* Show hamburger icon on smaller screens */
-    }
-    
-    .navbar-headings-container {
       display: none; /* Hide navbar links on smaller screens */
       flex-direction: column;
       background-color: #333;
@@ -76,10 +92,9 @@
       right: 0;
       padding: 10px 0;
       z-index: 10;
-    }
-  
-    .navbar-headings-container.show {
-      display: flex; /* Display navbar links when toggled */
-    }
   }
-  
+
+  .navbar-headings-container.show {
+      display: flex; /* Display navbar links when toggled */
+  }
+}

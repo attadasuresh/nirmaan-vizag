@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './About.css';
+import Footer from './Footer';
+
 import Carousel from 'react-bootstrap/Carousel';
 
 const About = () => {
@@ -137,6 +139,8 @@ const About = () => {
           </Carousel.Item>
         </Carousel>
       </div>
+<Footer />
+
     </>
   );
 };
