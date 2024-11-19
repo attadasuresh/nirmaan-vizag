@@ -15,7 +15,7 @@ const Home = () => {
     <Carousel>
         <Carousel.Item>
             <img
-                className="d-block w-100  home-carousel-img-desktop"
+                className="d-block w-100  home-carousel-img-desktop curvesol-image"
                 src="images/Online Courses Ad Template - Made with PosterMyWall (1).jpg"
                 alt="First slide"
             />
@@ -23,7 +23,7 @@ const Home = () => {
         </Carousel.Item>
         <Carousel.Item>
             <img
-                className="d-block w-100 home-carousel-img-desktop"
+                className="d-block w-100 home-carousel-img-desktop curvesol-image"
                 src="images/Study In Abroad Banner Post Template - Made with PosterMyWall.jpg"
                 alt="Second slide"
             />
@@ -31,7 +31,7 @@ const Home = () => {
         </Carousel.Item>
         <Carousel.Item>
             <img
-                className="d-block w-100 home-carousel-img-desktop"
+                className="d-block w-100 home-carousel-img-desktop curvesol-image"
                 src="images/World Youth Skills Day Post Template - Made with PosterMyWall.jpg"
                 alt="Third slide"
             />
