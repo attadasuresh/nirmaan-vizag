@@ -221,7 +221,7 @@ MS PowerPoint: Slide design, transitions, animations, and effective presentation
       </div>
       <div className='cource-aboutus-container'>
         <div>
-          <img src='images/english-speaking-course-lucknow-blog.png' alt='aboutus-img' className='cource-our-team-img' />
+          <img src='images/e08fc28afa60aa21ff5b6504dabfa60d.jpg' alt='aboutus-img' className='cource-our-team-img' />
         </div>
         <div className='cource-our-team-card-container'>
           <h1 className='cource-ourteam-heading-team'>Comprehensive Communicative English Program</h1>
@@ -230,7 +230,6 @@ MS PowerPoint: Slide design, transitions, animations, and effective presentation
             Our institute offers practical training in Communicative English, focusing on speaking, listening, and interaction skills. Prepare for real-life situations with our hands-on approach to language learning.
           </p>
           <p className='cource-ourteam-heading-team-paragraph'>
-
             <strong>Course Modules:</strong>
             <ul>
               <li>Basic English Grammar</li>
@@ -244,14 +243,12 @@ MS PowerPoint: Slide design, transitions, animations, and effective presentation
           </a>
         </div>
       </div>
-
       <div className="english-section">
         <h1 className="english-title">Communicative English: Build Confidence and Fluency</h1>
         <p className="english-intro">
           This course is designed for individuals who want to enhance their English communication abilities for professional or personal growth.
           Through practical exercises and real-life scenarios, gain the confidence to communicate effectively.
         </p>
-
         {/* Grammar Section */}
         <div className="english-tool-container">
           <img src="images/epp-graphic.png" alt="English Grammar" className="english-tool-image" />
@@ -267,7 +264,6 @@ MS PowerPoint: Slide design, transitions, animations, and effective presentation
             </ul>
           </div>
         </div>
-
         {/* Conversational Practice Section */}
         <div className="english-tool-container">
           <img src="images/spoken-english-course-in-laxmi-nagar.png" alt="Conversational Practice" className="english-tool-image" />
@@ -283,7 +279,6 @@ MS PowerPoint: Slide design, transitions, animations, and effective presentation
             </ul>
           </div>
         </div>
-
         {/* Pronunciation and Listening Skills Section */}
         <div className="english-tool-container">
           <img src="images/ai-coach-a.png" alt="Pronunciation and Listening Skills" className="english-tool-image" />
@@ -300,8 +295,6 @@ MS PowerPoint: Slide design, transitions, animations, and effective presentation
           </div>
         </div>
       </div>
-
-
       <div className='cource-slide-container'>
                 <Carousel>
                     <Carousel.Item>

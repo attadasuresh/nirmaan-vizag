@@ -33,7 +33,7 @@ const Placement = () => {
               <p className="placement-salary">Batch: {element.batch}</p>
             </div>
           ))
-        ) : (
+        ) : ( 
           <p>No data available.</p>
         )}
       </div>
