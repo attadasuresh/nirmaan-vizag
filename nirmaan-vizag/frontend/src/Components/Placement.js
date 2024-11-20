@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { baseUrl } from './Config';
-
 import './Placement.css'; 
 const Placement = () => {
-  const [data, setData] = useState([]);
+const [data, setData] = useState([]);
 
   useEffect(() => {
     axios.get(`${baseUrl}placementdetails`)
@@ -21,7 +20,8 @@ const Placement = () => {
 
   return (
     <>
-      <h1 className='placement-top-heading'>PLACED STUDENTS</h1>
+      <h1 className='placement-top-heading'> <span className='placement-top-heading-spam'>( 1500 + )</span>  STUDENTS PLACED </h1>
+
       <div className="placement-container">
         {Array.isArray(data) && data.length > 0 ? (
           data.map((element, id) => (
@@ -30,6 +30,8 @@ const Placement = () => {
               <h2 className="placement-name">{element.fullName}</h2>
               <p className="placement-company">Company: {element.companyName}</p>
               <p className="placement-salary">Salary: {element.salary}</p>
+              <p className="placement-salary">College: {element.collage}</p>
+
               <p className="placement-salary">Batch: {element.batch}</p>
             </div>
           ))

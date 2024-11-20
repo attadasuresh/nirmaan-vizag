@@ -27,7 +27,13 @@
     margin: 20px;
     color: white;
 }
-
+.footer-anchortag-about{
+    color: white;
+    text-decoration: none;
+}
+.home-footer-logo{
+    border-radius: 10px;
+}
 /* Responsive Styles */
 @media (max-width: 992px) {
     .footer-full-around-container {

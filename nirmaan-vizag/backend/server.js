@@ -25,13 +25,13 @@ db.connect((err) => {
 });
 
 app.post('/formdata', (req, res) => {
-    const sql = "INSERT INTO registerdata (fullname, email, mobile, qualification, college, dateofbirth, address) VALUES (?)";
+    const sql = "INSERT INTO registerdata (fullname, email, mobile, qualification, collage, dateofbirth, address) VALUES (?)";
     const values = [
         req.body.fullname,
         req.body.email,
         req.body.mobile,
         req.body.qualification,   
-        req.body.college,         
+        req.body.collage,         
         req.body.dateofbirth,
         req.body.address,
     ];

@@ -14,21 +14,23 @@ const Footer = () => {
       <div className='footer-full-around-container'>
 
       <div>
-        <img src='images/nirmaan_logo.png' alt='logo' className='home-footer-logo'/>
+        <img src='images/nirmaanlogo.png' alt='logo' className='home-footer-logo'/>
       </div>
       <div className='home-footer-full-container2'>
         <h1 className='home-footer-heading-all'>Contact Info</h1>
         <p>
-        2-115/2 , 1st Floor ,Opp ,Thota Polamamba Temple Near BAJI JUNCTION Main Road , Gopalpatnam ,Vizag-27
+        #58-1-278,2nd Floor, One Plus Show Room Upstairs, Beside Padmaja Suzuki & Royal Enfield , NAD Flyover, Gopalpatnam Main Road , Vizag -530009 .
         </p>
-        <p className='home-footer-icon-para'> contact@nirmaan.org</p>
-        <p>9908104113</p>
+        <p className='home-footer-icon-para'> parasuramudu.doddi@nirmaan.org</p>
+        <p>9908104113 , 6304159549</p>
         </div>
         <div className='home-footer-full-container2'>
         <h1 className='home-footer-heading-all'>More Info</h1>
-        <p>
+        <a href='/About' className='footer-anchortag-about' >
+        <p >
         About Us
         </p>
+        </a>
         <p className='home-footer-icon-para'> Privacy Policy</p>
         <p>FAQ</p>
         <p>Career</p>

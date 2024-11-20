@@ -5,19 +5,18 @@
     gap: 1.5rem;
     justify-content: center;
     padding: 2rem;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
   }
   
   /* Card styling with modern shadow and gradient effect */
   .placement-card {
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     text-align: center;
     width: 100%;
-    max-width: 320px;
+    max-width: 250px;
     padding: 1.5rem;
     transition: transform 0.3s, box-shadow 0.3s;
   }
@@ -84,5 +83,12 @@
   .placement-top-heading{
     text-align: center;
     padding: 10px;
+    font-weight: bold;
     font-family: roboto;
+    font-size: 50px;
+
+  }
+  .placement-top-heading-spam{
+    color: red;
+    font-size: 50px;
   }

@@ -113,11 +113,11 @@ const UserDashboard = () => {
             />
           </label>
           <label>
-          Collage:
+          collage:
             <input 
               type="text" 
-              name="Collage" 
-              value={userData.Collage} 
+              name="collage" 
+              value={userData.collage} 
               onChange={handleInputChange} 
               placeholder="Enter company name" 
               required
