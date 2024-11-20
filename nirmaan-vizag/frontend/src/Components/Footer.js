@@ -22,6 +22,7 @@ const Footer = () => {
         #58-1-278,2nd Floor, One Plus Show Room Upstairs, Beside Padmaja Suzuki & Royal Enfield , NAD Flyover, Gopalpatnam Main Road , Vizag -530009 .
         </p>
         <p className='home-footer-icon-para'> parasuramudu.doddi@nirmaan.org</p>
+        
         <p>9908104113 , 6304159549</p>
         </div>
         <div className='home-footer-full-container2'>

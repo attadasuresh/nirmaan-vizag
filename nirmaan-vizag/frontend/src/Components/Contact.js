@@ -19,12 +19,14 @@ const Contact = () => {
         <div className="contact-card">
           <FaMapMarkerAlt className="contact-icon" />
           <h3>Our Address</h3>
-          <p>2-115/2, 1st Floor, Opp Thota Polamamba Temple, Near BAJI JUNCTION Main Road, Gopalpatnam, Vizag-27</p>
+          <p> #58-1-278,2nd Floor, One Plus Show Room Upstairs, Beside Padmaja Suzuki & Royal Enfield , NAD Flyover, Gopalpatnam Main Road , Vizag -530009 .</p>
         </div>
         <div className="contact-card">
           <FaEnvelope className="contact-icon" />
           <h3>Email Us</h3>
-          <p>contact@nirmaan.org</p>
+          <p>parasuramudu.doddi@nirmaan.org</p>
+          <p>mohanrao.n@nirmaan.org</p>
+
         </div>
         <div className="contact-card">
           <FaPhone className="contact-icon" />
