@@ -34,6 +34,10 @@
 .home-footer-logo{
     border-radius: 10px;
 }
+.footer-copy-rights{
+    text-align: center;
+    color: white;
+}
 /* Responsive Styles */
 @media (max-width: 992px) {
     .footer-full-around-container {

@@ -1,180 +1,219 @@
 /* Container setup */
+.dashboard-image-form {
+  width: 100%; /* Ensures the image takes up full width of its container */
+  height: 87vh; /* Limits the height to 40% of the viewport height */
+  overflow: hidden; /* Prevents image overflow beyond container */
+  position: relative;
+}
+
+.dashboard-image-form img {
+  width: 100%; /* Ensures the image stretches to fill the container width */
+  height: 100%; /* Ensures the image stretches to fill the container height */
+  object-fit: cover; /* Ensures the image is scaled to cover the area without distorting */
+  object-position: center; /* Centers the image within the container */
+  position: absolute; /* Positions the image absolutely inside the container */
+  top: 0;
+  left: 0;
+}
+
 .dashboard-container {
-    display: flex;
-    gap: 30px;
-    padding: 40px;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Card styles */
-  .user-data-card, .user-form-card {
-    flex: 1;
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 30px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .user-data-card:hover, .user-form-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* User Data Card styles */
-  .user-data-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .user-data-card h2 {
-    font-size: 1.5rem;
-    color: #495057;
-    margin-bottom: 20px;
-  }
-  
-  .view-button {
-    padding: 12px 24px;
-    background: #007bff;
-    color: white;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .view-button:hover {
-    background: #0056b3;
-  }
-  
-  /* User Form Card styles */
-  .user-form-card h2 {
-    font-size: 1.6rem;
-    color: #343a40;
-    margin-bottom: 25px;
-    text-align: center;
-  }
-  
-  .user-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .user-form label {
-    font-size: 0.9rem;
-    color: #6c757d;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .user-form input[type="text"],
-  .user-form input[type="file"] {
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #ced4da;
-    margin-top: 8px;
-    transition: border-color 0.3s ease;
-  }
-  
-  .user-form input[type="text"]:focus,
-  .user-form input[type="file"]:focus {
-    border-color: #495057;
-    outline: none;
-  }
-  
-  .submit-button {
-    padding: 12px;
-    background: #28a745;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
-  }
-  
-  .submit-button:hover {
-    background: #218838;
-    transform: translateY(-2px);
-  }
-  /* User Data Card styles */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  background: #f4f7fa;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.dashboard-2containers {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Card Styles */
+.user-data-card,
+.user-form-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 48%;
+  min-width: 300px;
+}
+
+.user-data-card:hover,
+.user-form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* User Data Card Styles */
 .user-data-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(135deg, #007bff, #5a9af0);
+  background: linear-gradient(135deg, #4e73df, #1d5bb8);
   color: white;
-  border-radius: 16px;
-  padding: 30px;
   position: relative;
-  overflow: hidden;
-  height: 560px;
-
-}
-
-.user-data-card::before {
-  content: '';
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  width: 100px;
-  height: 100px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transform: scale(1.5);
-  z-index: 0;
 }
 
 .user-data-card h2 {
   font-size: 1.8rem;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
   z-index: 1;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
-/* Profile Placeholder */
 .profile-placeholder {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-color: #ffffff33;
   border-radius: 50%;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: white;
   z-index: 1;
 }
 
-/* View Button with Gradient */
 .view-button {
-  padding: 12px 24px;
-  background: linear-gradient(90deg, #ff6b6b, #f06595);
+  padding: 10px 20px;
+  background: #ff6b6b;
   color: white;
   font-weight: 600;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
   z-index: 1;
 }
 
 .view-button:hover {
-  background: linear-gradient(90deg, #f06595, #ff6b6b);
+  background: #f06595;
   transform: scale(1.05);
+}
+
+/* User Form Card Styles */
+.user-form-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 48%;
+  min-width: 300px;
+}
+
+.user-form-card h2 {
+  font-size: 1.6rem;
+  color: #343a40;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user-form label {
+  font-size: 1rem;
+  color: #6c757d;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-form input[type="text"],
+.user-form input[type="file"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  margin-top: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.user-form input[type="text"]:focus,
+.user-form input[type="file"]:focus {
+  border-color: #495057;
+  outline: none;
+}
+
+.submit-button {
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design for Mobile & Tablet */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .user-data-card,
+  .user-form-card {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+
+  .view-button,
+  .submit-button {
+    padding: 10px 20px;
+  }
+
+  .user-form label {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+  .user-data-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-placeholder {
+    width: 80px;
+    height: 80px;
+  }
+
+  .view-button,
+  .submit-button {
+    padding: 8px 16px;
+  }
+
+  .user-form label {
+    font-size: 1rem;
+  }
+
+  .user-form input[type="text"],
+  .user-form input[type="file"] {
+    padding: 10px;
+  }
 }

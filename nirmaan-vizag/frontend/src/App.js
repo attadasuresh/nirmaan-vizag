@@ -12,6 +12,8 @@ import Login from "./Components/Login";
 import "./App.css";
 import AdminSecure from "./Components/AdminSecure";
 import UserDashboard from "./Components/Dashboard";
+import Allplacementdata from "./Components/Allplacementdata";
+
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/placement" element={<Placement />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/Allplacementdata" element={<Allplacementdata />} />
+
         <Route
           path="/admin"
           element={

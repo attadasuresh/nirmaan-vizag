@@ -22,7 +22,6 @@ const Footer = () => {
         #58-1-278,2nd Floor, One Plus Show Room Upstairs, Beside Padmaja Suzuki & Royal Enfield , NAD Flyover, Gopalpatnam Main Road , Vizag -530009 .
         </p>
         <p className='home-footer-icon-para'> parasuramudu.doddi@nirmaan.org</p>
-        
         <p>9908104113 , 6304159549</p>
         </div>
         <div className='home-footer-full-container2'>
@@ -38,14 +37,13 @@ const Footer = () => {
         </div>
         <div className='home-footer-full-container2'>
         <h1 className='home-footer-heading-all'>Follow Us</h1>
-        <TiSocialLinkedinCircular className='home-footer-socialmedia-icons' />
-        <TiSocialFacebookCircular className='home-footer-socialmedia-icons' />
-        <TiSocialTwitterCircular className='home-footer-socialmedia-icons' />
+        <TiSocialLinkedinCircular className='home-footer-socialmedia-icons'/>
+        <TiSocialFacebookCircular className='home-footer-socialmedia-icons'/>
+        <TiSocialTwitterCircular className='home-footer-socialmedia-icons'/>
 <TiSocialInstagram className='home-footer-socialmedia-icons' />
-        
         </div>
       </div>
-
+<p className='footer-copy-rights'>©  All Rights Reserved Nirmaan.</p>
     </Card>
    </>
   )

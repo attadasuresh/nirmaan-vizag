@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Register.css';
-import {baseUrl} from './Config'
-
+import { baseUrl } from './Config';
 
 const Register = () => {
   const [data, setData] = useState({
@@ -27,6 +26,9 @@ const Register = () => {
   const submitHandler = (e) => {
     e.preventDefault();
 
+    console.log('Submitting data:', data); // Log the data before sending
+
+    // Sending POST request to the backend
     axios.post(`${baseUrl}formdata`, data)
       .then((response) => {
         console.log('Data submitted successfully:', response.data);
@@ -44,6 +46,7 @@ const Register = () => {
       })
       .catch((error) => {
         console.error('There was an error submitting the form:', error);
+        alert('There was an error submitting the form.');
       });
   };
 
@@ -80,7 +83,7 @@ const Register = () => {
           placeholder='Your Mobile Number'
           className='register-bookcamp-input-card'
           required
-          name='mobile' 
+          name='mobile'
           value={mobile}
           onChange={handleChange}
         />
@@ -107,7 +110,7 @@ const Register = () => {
           onChange={handleChange}
         />
 
-        <label className='register-label-card1'> Today Date (required)</label>
+        <label className='register-label-card1'>Date of Birth (required)</label>
         <input
           type='date'
           className='register-bookcamp-input-card'

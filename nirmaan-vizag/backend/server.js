@@ -25,13 +25,13 @@ db.connect((err) => {
 });
 
 app.post('/formdata', (req, res) => {
-    const sql = "INSERT INTO registerdata (fullname, email, mobile, qualification, collage, dateofbirth, address) VALUES (?)";
+    const sql = "INSERT INTO registerdata (fullname, email, mobile, qualification, college, dateofbirth, address) VALUES (?)";
     const values = [
         req.body.fullname,
         req.body.email,
         req.body.mobile,
         req.body.qualification,   
-        req.body.collage,         
+        req.body.college,   // ensure this matches your form field name
         req.body.dateofbirth,
         req.body.address,
     ];
@@ -43,6 +43,13 @@ app.post('/formdata', (req, res) => {
         return res.json({ message: "Data inserted successfully", data });
     });
 });
+
+
+
+
+
+
+
 
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
 
@@ -95,6 +102,11 @@ app.delete('/formdatadelete/:id', (req, res) => {
     });
 });
 
+
+
+
+
+
 app.post('/placement', upload.single("image"), (req, res) => {
     const filePath = path.join('uploads', req.file.filename);
 
@@ -124,6 +136,35 @@ app.get('/placementdetails', (req, res) => {
       if (err) return res.json(err);
       return res.json(data);
     });
+});
+
+
+// Backend (server.js)
+
+app.put('/placementdetails/:id', (req, res) => {
+  const { id } = req.params;
+  const { fullName, companyName, salary, collage, batch, image } = req.body;
+
+  const sql = "UPDATE placementdetails SET fullName = ?, companyName = ?, salary = ?, collage = ?, batch = ?, image = ? WHERE id = ?";
+  db.query(sql, [fullName, companyName, salary, collage, batch, image, id], (err, result) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: 'Error updating placement data' });
+    }
+    res.json({ message: 'Placement data updated successfully' });
+  });
+});
+
+app.delete('/placementdetails/:id', (req, res) => {
+  const { id } = req.params;
+  const sql = "DELETE FROM placementdetails WHERE id = ?";
+  db.query(sql, [id], (err, result) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: 'Error deleting placement data' });
+    }
+    res.json({ message: 'Placement data deleted successfully' });
+  });
 });
 
 app.listen(3001, () => {

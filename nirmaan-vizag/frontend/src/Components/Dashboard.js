@@ -56,7 +56,19 @@ const UserDashboard = () => {
 
   return (
     <div className="dashboard-container">
+      <div className='dashboard-2containers'>
       <div className="user-data-card">
+  {/* Profile Placeholder */}
+  <div className="profile-placeholder">👤</div>
+  
+  <h2>
+    <span role="img" aria-label="User Icon"></span> Placements Data
+  </h2>
+  
+  <a href='/Allplacementdata'>
+        <button className="view-button">View</button></a>
+</div>
+<div className="user-data-card">
   {/* Profile Placeholder */}
   <div className="profile-placeholder">👤</div>
   
@@ -67,6 +79,7 @@ const UserDashboard = () => {
   <a href='/Admin'>
         <button className="view-button">View</button></a>
 </div>
+      </div>
 
       {/* Card 2: Form */}
       <div className="user-form-card">
@@ -138,6 +151,9 @@ const UserDashboard = () => {
           </label>
           <button type="submit" className="submit-button">Submit</button>
         </form>
+      </div>
+      <div className="user-form-card">
+<img src='images/pngtree-online-registration-man-and-woman-fill-out-a-form-application-choice-png-image_7360816.png'   className='dashboard-image-form'/>
       </div>
     </div>
   );

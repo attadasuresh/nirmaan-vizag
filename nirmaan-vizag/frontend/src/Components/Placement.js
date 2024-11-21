@@ -20,8 +20,7 @@ const [data, setData] = useState([]);
 
   return (
     <>
-      <h1 className='placement-top-heading'> <span className='placement-top-heading-spam'>( 1500 + )</span>  STUDENTS PLACED </h1>
-
+      <h1 className='placement-top-heading'> <span className='placement-top-heading-spam'>( 1800 + )</span> PLACED  STUDENTS  </h1>
       <div className="placement-container">
         {Array.isArray(data) && data.length > 0 ? (
           data.map((element, id) => (
@@ -31,7 +30,6 @@ const [data, setData] = useState([]);
               <p className="placement-company">Company: {element.companyName}</p>
               <p className="placement-salary">Salary: {element.salary}</p>
               <p className="placement-salary">College: {element.collage}</p>
-
               <p className="placement-salary">Batch: {element.batch}</p>
             </div>
           ))

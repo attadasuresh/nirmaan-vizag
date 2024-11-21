@@ -1,0 +1,84 @@
+/* AllPlacementData.css */
+.placement-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .placement-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 250px;
+    background-color: #f9f9f9;
+  }
+  
+  .placement-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .popup-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+  }
+  .search-bar {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    outline: none;
+  }
+  
+  .search-input:focus {
+    border-color: #495057;
+  }
+  .allplacement-buttons{
+    border-radius: 5px;
+  }
+  .allolacementdata-heading{
+    text-align: center;
+    font-family: roboto;
+    padding: 10px;
+  }
