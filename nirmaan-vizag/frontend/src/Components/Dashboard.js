@@ -73,7 +73,7 @@ const UserDashboard = () => {
   <div className="profile-placeholder">👤</div>
   
   <h2>
-    <span role="img" aria-label="User Icon"></span> Users Data
+    <span role="img" aria-label="User Icon"></span> Register Students Data
   </h2>
   
   <a href='/Admin'>
