@@ -22,17 +22,15 @@ const UserDashboard = () => {
   const handleImageChange = (e) => {
     setUserData({ ...userData, image: e.target.files[0] });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-
 
     const formdata = new FormData();
     formdata.append('fullName', userData.fullName);
     formdata.append('salary', userData.salary);
     formdata.append('companyName', userData.companyName);
     formdata.append('collage', userData.collage);
-    formdata.append('batch', userData.batch);
+    formdata.append('batch', userData.batch); 
     formdata.append('image', userData.image);
 
     axios.post(`${baseUrl}placement`, formdata)
@@ -43,7 +41,7 @@ const UserDashboard = () => {
           fullName: '',
           salary: '',
           companyName: '',
-          collage: '',
+          collage: '',  
           batch: '',  
           image: ''
         });
@@ -53,34 +51,28 @@ const UserDashboard = () => {
         alert("An error occurred while submitting the data.");
       });
   };
-
   return (
     <div className="dashboard-container">
       <div className='dashboard-2containers'>
       <div className="user-data-card">
   {/* Profile Placeholder */}
   <div className="profile-placeholder">👤</div>
-  
   <h2>
     <span role="img" aria-label="User Icon"></span> Placements Data
   </h2>
-  
   <a href='/Allplacementdata'>
         <button className="view-button">View</button></a>
 </div>
 <div className="user-data-card">
   {/* Profile Placeholder */}
   <div className="profile-placeholder">👤</div>
-  
   <h2>
     <span role="img" aria-label="User Icon"></span> Register Students Data
   </h2>
-  
   <a href='/Admin'>
         <button className="view-button">View</button></a>
 </div>
       </div>
-
       {/* Card 2: Form */}
       <div className="user-form-card">
         <h2>Update User Information</h2>
@@ -153,7 +145,7 @@ const UserDashboard = () => {
         </form>
       </div>
       <div className="user-form-card">
-<img src='images/pngtree-online-registration-man-and-woman-fill-out-a-form-application-choice-png-image_7360816.png'   className='dashboard-image-form'/>
+<img src='images/pngtree-online-registration-man-and-woman-fill-out-a-form-application-choice-png-image_7360816.png' alt='regiser-img'   className='dashboard-image-form'/>
       </div>
     </div>
   );
